@@ -1,21 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: "Geist", serif;
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --radius: 0.5rem;
   }
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.filter-white {
+  filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(265deg) brightness(104%)
+    contrast(101%);
+}
+#logo {
+  font-family: "Roboto Slab", serif;
 }
