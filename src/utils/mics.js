@@ -19,3 +19,10 @@ export const current = {
   month: new Date().getMonth(),
   year: new Date().getFullYear(),
 };
+export function configure(token) {
+  return {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  };
+}

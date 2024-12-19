@@ -1,6 +1,7 @@
 import tabReducer from "./slices/tabSlice";
 import userReducer from "./slices/userSlice";
 import themeReducer from "./slices/themeSlice";
+import eventReducer from "./slices/eventSlice";
 import { configureStore } from "@reduxjs/toolkit";
 
 export function makeStore() {
@@ -9,6 +10,7 @@ export function makeStore() {
       user: userReducer,
       theme: themeReducer,
       tab: tabReducer,
+      eventList: eventReducer,
     },
   });
 }

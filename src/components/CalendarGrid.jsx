@@ -5,7 +5,6 @@ import MonthTab from "./MonthTab";
 export default function CalendarGrid() {
   const theme = useSelector((state) => state.theme.isDark);
   const currentTab = useSelector((state) => state.tab.currentTab);
-  console.log(currentTab);
   return (
     <div
       className={`h-[87svh] mx-5 rounded-2xl border shadow-lg ${

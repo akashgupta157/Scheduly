@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <div
       className={`flex items-center justify-between w-full h-[10svh] px-5 ${
-        theme ? "bg-zinc-900 text-white" : "bg-gray-200 text-black"
+        theme ? "bg-zinc-900 text-white" : "bg-gray-100 text-black"
       }`}
     >
       <div className="flex items-center gap-20">
@@ -119,7 +119,7 @@ export default function Navbar() {
                 currentTab === tab
                   ? theme
                     ? "bg-[#010502]"
-                    : "bg-gray-400"
+                    : "bg-gray-300"
                   : null
               }`}
               onClick={() => currentTab !== tab && dispatch(setTab(tab))}
@@ -141,7 +141,7 @@ export default function Navbar() {
                 />
               ) : (
                 <button
-                  className={`size-9 rounded-full flex items-center justify-center`}
+                  className={`size-9 rounded-full flex items-center justify-center capitalize`}
                   style={{ backgroundColor: `#${user?.color}` }}
                 >
                   {user?.name[0]}
